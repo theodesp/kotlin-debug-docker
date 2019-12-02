@@ -1,0 +1,1 @@
+/Users/itspare/IdeaProjects/kotlin-debug/build/classes/kotlin/main/HelloWorldKt$main$1.class:/Users/itspare/IdeaProjects/kotlin-debug/build/classes/kotlin/main/HelloWorldKt.class
