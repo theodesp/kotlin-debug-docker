@@ -5,21 +5,22 @@ plugins {
     kotlin("jvm") version "1.3.60"
     application
     id("com.google.cloud.tools.jib") version "1.8.0"
-    id("com.github.johnrengelman.shadow") version "5.2.0"
+    id("com.github.johnrengelman.shadow") version "4.0.4"
 }
 
 group = "com"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile("io.javalin:javalin:3.6.0")
-    compile("org.slf4j:slf4j-simple:1.7.28")
-    compile("org.slf4j:slf4j-api:1.7.28")
+    compile("io.ktor:ktor-server-core:1.2.6")
+    compile("io.ktor:ktor-server-netty:1.2.6")
+    compile("ch.qos.logback:logback-classic:1.2.3")
     testCompile("junit:junit:4.12")
 }
 
